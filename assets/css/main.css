@@ -314,7 +314,7 @@ input, select, textarea {
 
 	strong, b {
 		color: rgba(255, 255, 255, 0.875);
-		font-weight: 400;
+		font-weight: 700;
 	}
 
 	em, i {
@@ -3693,8 +3693,20 @@ input, select, textarea {
 		background-image: none;
 	}
 
-	.panel.banner.right p , .intro.color4 p , .intro.color4 h2 {
+	.panel > .color5 {
+		background-color: #306892;
+		background-image: none;
+	}
+
+	.panel.banner.right p , .intro.color4 p , .intro.color4 h2 ,  .txt-blue {
 		color: rgb(14, 50, 82);
+
+	}
+
+
+.panel.banner.right p strong, .intro.color4 p strong, .intro.color4 h2 strong {
+		color: rgb(14, 50, 82);
+		font-weight: 700;
 	}
 
 .button.primary.color1 {
@@ -3743,4 +3755,9 @@ h1,h2,h3,h4,h5,h6{
 
 .panel > .intro {
 	width: 26rem;
+}
+
+a:hover {
+	border-bottom-color: transparent;
+	color: #ccc;
 }
