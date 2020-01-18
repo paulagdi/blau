@@ -3464,7 +3464,7 @@ input, select, textarea {
 			-webkit-flex-direction: column !important;
 			-ms-flex-direction: column !important;
 			flex-direction: column !important;
-			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 70%, rgba(0, 0, 0, 0.175)) !important;
+			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.175)) !important;
 			min-height: 25rem;
 		}
 
@@ -3753,6 +3753,9 @@ h1,h2,h3,h4,h5,h6{
     width: 60%;
 }
 
+
+
+
 .panel > .intro {
 	width: 26rem;
 }
@@ -3760,4 +3763,10 @@ h1,h2,h3,h4,h5,h6{
 a:hover {
 	border-bottom-color: transparent;
 	color: #ccc;
+}
+
+@media screen and (max-width: 500px) {
+	.panel.large .span-5 {
+	    width: 70%;
+	}
 }
