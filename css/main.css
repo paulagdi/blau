@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans:wght@300;500&display=swap');
+
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+	padding: 0;
+}
+
+.sidebar{
+  overflow: hidden;
+  background-color: #173250;
+  color: #fff;
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.4);
+}
+
+.sidebar a , .contact a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.mainNav{
+  font-family: 'Crimson Text', serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: -30px 15px 20px 15px;
+}
+
+.mainNav a{
+  border-bottom: 1px transparent solid;
+  transition: all 0.3s ease-out;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.mainNav a:hover , .mainNav a.active{
+  border-bottom: 1px #efefef solid;
+}
+
+
+.logo {
+  text-align: right;
+  margin: 15px 25px;
+}
+.logo img{
+  width: 90px;
+
+}
+
+.contact {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  background-color: #173250;
+  padding: 20px;
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+}
+
+
+.icon {
+  width: 20px;
+  line-height: 1.35rem;
+  vertical-align: text-top;
+}
+
+.icon-text {
+  font-weight: 500;
+  line-height: 1.35rem;
+  border-bottom: 1px transparent solid;
+  transition: all 0.2s ease-out;
+}
+
+.icon-text:hover {
+  border-bottom: 1px #fff solid;
+  line-height: 1.35rem;
+
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.mainContent{
+  background-color: #fff;
+  padding: 0 25px;
+}
+
+.contentHeader {
+  margin: 30px 0;
+
+}
+
+.cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
+    border-color: none;
+    cursor: default;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #000;
+}
+
+.cbp-l-filters-button .cbp-filter-item  {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  padding: 0px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #000;
+}
+
+.cbp-l-caption-title {
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cbp-l-caption-desc {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.1rem;
+    font-weight: 300;
+}
+
+.cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+    border: 1px solid #000;
+    color: #000;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    min-width: 80px;
+    text-decoration: none;
+    padding: 0 30px;
+    outline: 0;
+    margin-top: 40px;
+    box-shadow: none;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+
+.cbp-l-filters-button {
+  margin-bottom: 0;
+}
+.cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+  margin: 40px 0;
+}
+
+.cbp-l-inline-title {
+  color: #000;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cbp-l-inline-subtitle{
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25rem;
+  /* line-height: 1.5rem; */
+  font-weight: 500;
+}
+
+.cbp-l-inline-desc {
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+.cbp-l-inline-view {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #000;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 0px 30px;
+  line-height: 45px;
+  height: 45px;
+}
+
+.cbp-l-inline-view-wrap {
+  text-align: center;
+}
+
+.cbp-l-inline {
+    background: #fff;
+    padding: 30px 0px;
+}
+
+.cbp-popup-singlePageInline .cbp-popup-close {
+    background: url(../images/close-line.svg) no-repeat;
+    background-size: 35px 35px;
+    height: 35px;
+    width: 35px;
+    right: 0px;
+    top: 35px;
+}
+
+.cbp-slider .cbp-nav-prev , .cbp-slider .cbp-nav-next {
+  top: auto;
+  bottom: -60px;
+}
+
+.cbp-nav-controls {
+  top: 0;
+
+}
+.cbp-slider .cbp-nav-prev:after {
+    background: url(../images/thin-left.svg) no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+.cbp-slider .cbp-nav-next:after {
+    background: url(../images/thin-right.svg) no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.cbp-slider .cbp-nav-prev:hover:after , .cbp-slider .cbp-nav-next:hover:after {
+    background-position: center;
+    opacity: 0.5;
+}
+.cbp-slider .cbp-nav-prev {
+
+    left: 0;
+    right: -160px;
+
+}
+.cbp-slider .cbp-nav-next {
+    right: -10px;
+    left: auto;
+}
+
+.cbp-slider .cbp-nav-pagination {
+    text-align: right;
+    bottom: -48px;
+    right: 30px;
+    left: 0;
+    z-index: 99;
+}
+
+.photoCopy {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  font-weight: 300;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.photoCopy a {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+.cbp-nav-pagination-active {
+    background: #000;
+}
+
+.cbp-nav-pagination-item {
+    width: 7px;
+    height: 7px;
+
+}
+
+.subtitle {
+  color: #000;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content p , .content li {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.60rem;
+  margin-bottom: 25px;
+}
+.content strong {
+  font-weight: 500;
+
+}
+.content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content a{
+
+  color: #000;
+  text-decoration: underline;
+
+}
+
+.content a:hover {
+  font-weight: bold;
+}
+
+.cbp-item {
+  border-radius: 2px;
+}
+
+/* responsive DESKTOP*/
+
+@media (min-width: 768px) {
+  .cbp-caption-zoom .cbp-caption-activeWrap {
+    background-color: rgba(0,0,0,0.85);
+  }
+  .cbp-l-inline {
+    margin: 20px 0;
+    overflow: hidden;
+    background: #FAFAFA;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+  .contact {
+    position: fixed;
+    bottom: 50px;
+    left:0;
+    min-width: 150px;
+    width: 21%;
+    padding: 0 40px;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.35rem;
+  }
+
+  .mainNav{
+    margin: 0;
+    margin-top: 60px;
+  }
+  .mainContent{
+    background-color: #fff;
+    padding: 0 50px;
+    margin-left: 20%;
+  }
+  .logo{
+    text-align: center;
+    margin: 30px 0;
+  }
+  .logo img{
+    width: 100px;
+
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 150px;
+    width: 21%;
+    height: auto;
+    padding: 0 40px;
+  }
+
+.contentHeader  {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    align-content:center;
+    padding: 30px 0;
+    margin: 0;
+  }
+  .cbp-l-inline-view-wrap {
+    text-align: left;
+  }
+  .cbp-slider .cbp-nav-pagination {
+      text-align: center;
+      bottom: -48px;
+      right: 0;
+      left: 0;
+  }
+  .cbp-slider .cbp-nav-prev {
+      left: 150px;
+      right: auto;
+  }
+  .cbp-slider .cbp-nav-next {
+      right: 150px;
+      left: auto;
+  }
+  .cbp-popup-singlePageInline .cbp-popup-close {
+
+      right: 20px;
+
+  }
+  .mainContent{
+    margin-bottom: 50px;
+  }
+
+
+}

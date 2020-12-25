@@ -1,0 +1,67 @@
+(function($, window, document, undefined) {
+    'use strict';
+
+    // init cubeportfolio
+    $('#js-grid-lightbox-gallery').cubeportfolio({
+        filters: '#js-filters-lightbox-gallery2',
+        // loadMore: '#js-loadMore-lightbox-gallery',
+        // loadMoreAction: 'click',
+        layoutMode: 'grid',
+        mediaQueries: [{
+            width: 1500,
+            cols: 4
+        }, {
+            width: 1100,
+            cols: 4
+        }, {
+            width: 800,
+            cols: 4
+        }, {
+            width: 480,
+            cols: 2
+        }, {
+            width: 320,
+            cols: 1
+        }],
+        defaultFilter: '*',
+        animationType: 'rotateSides',
+        gapHorizontal: 55,
+        gapVertical: 65,
+        gridAdjustment: 'responsive',
+        caption: 'zoom',
+        displayType: 'default',
+        // displayTypeSpeed: 400,
+        filterDeeplinking:true,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '',
+
+        // singlePageInline
+        singlePageInlineDelegate: '.cbp-singlePageInline',
+        singlePageInlinePosition: 'below',
+        singlePageInlineInFocus: true,
+        singlePageInlineDeeplinking:true,
+        singlePageInlineCallback: function(url, element) {
+            // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
+            var t = this;
+
+            $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'html',
+                    timeout: 30000
+                })
+                .done(function(result) {
+
+                    t.updateSinglePageInline(result);
+
+                })
+                .fail(function() {
+                    t.updateSinglePageInline('AJAX Error! Please refresh the page!');
+                });
+        },
+    });
+})(jQuery, window, document);

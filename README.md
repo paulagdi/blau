@@ -1,2 +1,0 @@
-# blau
-Cyanotype project
