@@ -335,6 +335,11 @@ h2 {
 .cbp-item {
   border-radius: 2px;
 }
+.cbp-caption-defaultWrap {
+  background-color: #173250;
+
+
+}
 
 /* responsive DESKTOP*/
 

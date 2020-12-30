@@ -8,25 +8,18 @@
         // loadMoreAction: 'click',
         layoutMode: 'grid',
         mediaQueries: [{
-            width: 1500,
+          
+            width: 767,
             cols: 4
         }, {
-            width: 1100,
-            cols: 4
-        }, {
-            width: 800,
-            cols: 4
-        }, {
-            width: 480,
-            cols: 2
-        }, {
+
             width: 320,
-            cols: 1
+            cols: 2
         }],
         defaultFilter: '*',
         animationType: 'rotateSides',
-        gapHorizontal: 55,
-        gapVertical: 65,
+        gapHorizontal: matchMedia('(max-width: 767px)').matches ? 25 : 55,
+        gapVertical: matchMedia('(max-width: 767px)').matches ? 25 : 65,
         gridAdjustment: 'responsive',
         caption: 'zoom',
         displayType: 'default',
